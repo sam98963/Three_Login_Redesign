@@ -11,10 +11,11 @@ export default {
       },
       width: {
         "97.5": "97.5%",
-        "90": "90%"
+        "90": "90%",
+        "112": "28rem"
       },
       height: {
-        "88": "22rem"
+        "88": "22rem",
       },
       borderWidth: {
         "1": "1px"
