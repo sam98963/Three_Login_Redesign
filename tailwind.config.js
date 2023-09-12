@@ -10,13 +10,17 @@ export default {
 
       },
       width: {
-        "97.5": "97.5%"
+        "97.5": "97.5%",
+        "90": "90%"
       },
       height: {
-        "112": "28rem"
+        "88": "22rem"
       },
       borderWidth: {
         "1": "1px"
+      },
+      borderImage: {
+        "three": "url(https://1000logos.net/wp-content/uploads/2021/09/Three-UK-logo.png)"
       }
     },
     screens: {

@@ -4,7 +4,7 @@ import Footer from "./Components/Footer/Footer"
 function App() {
   return (
     <>
-      <div className="relative flex flex-row items-between justify-between w-screen h-screen flex-wrap">
+      <div className="relative flex flex-col items-center justify-between w-screen h-screen flex-wrap">
         <Header />
         <Footer />
       </div>
