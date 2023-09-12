@@ -12,7 +12,8 @@ export default {
       width: {
         "97.5": "97.5%",
         "90": "90%",
-        "112": "28rem"
+        "112": "28rem",
+        "57.5": "57.5%"
       },
       height: {
         "88": "22rem",
@@ -25,12 +26,13 @@ export default {
       },
       fontSize: {
         "16xl": "16rem",
-        "20xl": "20rem"
+        "20xl": "20rem",
+        
       },
       margin:{
         "19": "9.5rem",
         "24": "12rem",
-      }
+      },
     },
     screens: {
       'sm': '640px',
