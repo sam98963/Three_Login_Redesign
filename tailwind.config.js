@@ -21,6 +21,14 @@ export default {
       },
       borderImage: {
         "three": "url(https://1000logos.net/wp-content/uploads/2021/09/Three-UK-logo.png)"
+      },
+      fontSize: {
+        "16xl": "16rem",
+        "20xl": "20rem"
+      },
+      margin:{
+        "19": "9.5rem",
+        "24": "12rem",
       }
     },
     screens: {
