@@ -11,7 +11,17 @@ export default function Form(){
     password:""
   })
   
-
+  const [passwordVisible, setPasswordVisible] = useState(false)
+  const [passwordInputType, setPasswordInputType] = useState("password")
+  
+  function handlePasswordVisibility(){
+    setPasswordVisible(!passwordVisible)
+    if(passwordVisible){
+      setPasswordInputType("text")
+    } else{
+      setPasswordInputType("password")
+    }
+  }
 
   function handleInputChange(event){
     const {name, value} = event.target;
@@ -48,8 +58,8 @@ export default function Form(){
         <div className="w-full md:w-3/5 lg:w-1/2 px-7 flex flex-col">
           <p className="font-bold">Password</p>
           <div className="bg-tertiary py-1.5 md:py-2 pl-2 rounded w-full flex justify-between items-center">
-            <input type= "text" className="bg-tertiary md:placeholder:text-lg rounded w-5/8 focus:outline-none text-xl" name="password" value={formData.password} onChange={handleInputChange}></input>
-            <img src = {ShowPassword} className="h-6 w-6 inline-block mr-3 cursor-pointer"/>
+            <input type={passwordInputType} className="bg-tertiary md:placeholder:text-lg rounded w-5/8 focus:outline-none text-xl" name="password" value={formData.password} onChange={handleInputChange}></input>
+            <img src = {ShowPassword} onClick={handlePasswordVisibility} className="h-6 w-6 inline-block mr-3 cursor-pointer"/>
           </div>
           <a className="self-end underline">Forgot your password?</a>
         </div>
