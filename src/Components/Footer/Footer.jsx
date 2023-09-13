@@ -3,7 +3,7 @@ import Phone from "../../Assets/Phone.png"
 import Location from "../../Assets/Location.png"
 export default function Footer(){
   return(
-    <footer className="md:w-97.5 w-90 md:mx-3 mx-1 h-60 bg-secondary my-4 rounded-lg border-tertiary border-1 md:h-72 flex relative flex-wrap space-between">
+    <footer className="md:w-97.5 w-90 md:mx-3 mx-1 h-60 bg-secondary my-4 rounded-lg border-tertiary border-1 md:h-72 flex absolute flex-wrap space-between bottom-0">
       <section className="flex flex-col p-3 sm:w-42  w-full">
         <div className="flex row-reverse w-full sm:py-2 py-3 mx-2">
           <img src = {Phone} className="h-6 w-6 inline-block mr-2"/>
@@ -20,7 +20,7 @@ export default function Footer(){
       </section>
       <section className="w-full flex flex-col justify-start items-end sm:w-52 w-full">
 
-          <ul className="flex w-full sm:justify-end justify-around pt-6 px-2 md:text-sm underline text-xs ">
+          <ul className="flex w-full sm:justify-end justify-around pt-6 px-2 md:text-sm underline text-xs pt-5 border-t-5 border-tertiary border-solid">
             <li className = "inline sm:px-3 px-1">
               Our Company
             </li>

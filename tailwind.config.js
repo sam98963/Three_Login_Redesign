@@ -19,6 +19,7 @@ export default {
       },
       height: {
         "88": "22rem",
+        "108": "23rem"
       },
       borderWidth: {
         "1": "1px"
@@ -36,7 +37,8 @@ export default {
       margin:{
         "19": "9.5rem",
         "24": "12rem",
-        "23": "11.5rem"
+        "23": "11.5rem",
+        "6.5": "1.6rem"
       },
     },
     screens: {
