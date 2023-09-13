@@ -1,6 +1,7 @@
 import NewTab from "../../Assets/NewTab.png"
 import {useState} from "react"
 import validatePassword from "../../Hooks/validatePassword"
+import validateEmail from "../../Hooks/validateEmail"
 export default function Form(){
   const [formData, setFormData] = useState({
     email:"",
@@ -18,7 +19,9 @@ export default function Form(){
 
   function handleFormSubmit(){
     if(!validatePassword(formData.password)){
-      return alert("Invalid Password")
+      return alert("Invalid Password")}
+     if(!validateEmail(formData.email)){
+      return alert("Invalid Email")
     }
   }
 
