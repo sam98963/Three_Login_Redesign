@@ -1,4 +1,5 @@
 import NewTab from "../../Assets/NewTab.png"
+import ShowPassword from "../../Assets/ShowPassword.png"
 import {useState} from "react"
 import validatePassword from "../../Hooks/validatePassword"
 import validateEmail from "../../Hooks/validateEmail"
@@ -15,7 +16,6 @@ export default function Form(){
   function handleInputChange(event){
     const {name, value} = event.target;
     setFormData((prevState => ({...prevState, [name]: value})));
-    console.log(formData)
   }
 
   function handleFormSubmit(){
@@ -47,7 +47,10 @@ export default function Form(){
         </div>
         <div className="w-full md:w-3/5 lg:w-1/2 px-7 flex flex-col">
           <p className="font-bold">Password</p>
-          <input type= "text" className="bg-tertiary md:placeholder:text-lg py-1.5 md:py-2 pl-2 rounded w-full focus:outline-none text-xl " name="password" value={formData.password} onChange={handleInputChange}></input>
+          <div className="bg-tertiary py-1.5 md:py-2 pl-2 rounded w-full flex justify-between items-center">
+            <input type= "text" className="bg-tertiary md:placeholder:text-lg rounded w-5/8 focus:outline-none text-xl" name="password" value={formData.password} onChange={handleInputChange}></input>
+            <img src = {ShowPassword} className="h-6 w-6 inline-block mr-3 cursor-pointer"/>
+          </div>
           <a className="self-end underline">Forgot your password?</a>
         </div>
         <div className="w-full md:w-3/5 lg:w-1/2 px-7 flex flex-col items-start justify-center">
