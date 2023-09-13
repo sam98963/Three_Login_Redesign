@@ -2,6 +2,7 @@ import NewTab from "../../Assets/NewTab.png"
 import {useState} from "react"
 import validatePassword from "../../Hooks/validatePassword"
 import validateEmail from "../../Hooks/validateEmail"
+import validatePhoneNumber from "../../Hooks/validatePhoneNumber"
 export default function Form(){
   const [formData, setFormData] = useState({
     email:"",
@@ -22,6 +23,8 @@ export default function Form(){
       return alert("Invalid Password")}
      if(!validateEmail(formData.email)){
       return alert("Invalid Email")
+    } if(!validatePhoneNumber(formData.phone)){
+      return alert("Invalid Phone Number")
     }
   }
 
@@ -50,7 +53,7 @@ export default function Form(){
         <div className="w-full md:w-3/5 lg:w-1/2 px-7 flex flex-col items-start justify-center">
           <button className="w-full bg-primary font-bold py-1 text-base md:text-xl md:py-2 rounded mt-6.5">Login</button>
           <button className="w-full bg-secondary font-bold py-1 text-base md:text-xl md:py-2 rounded mt-3">Register</button>
-          <p className="lg:self-end self-center my-1 md:text-sm text-xs">If you are a business owner, please <a className="self-end underline">login here</a></p>
+          <p className="lg:self-end self-center my-1 md:text-sm text-xs">If you are a business owner, please <a href="" target="_blank" className="self-end underline">login here</a></p>
         </div>
         
       </form>
