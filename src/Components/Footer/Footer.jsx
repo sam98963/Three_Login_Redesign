@@ -1,9 +1,50 @@
+import Question from "../../Assets/Question.png"
 export default function Footer(){
   return(
-    <div className="md:w-97.5 w-90 md:mx-3 mx-1 h-64 bg-secondary my-4 rounded-lg border-tertiary border-1 md:h-80 flex">
-    <div className="text-center self-end w-full overflow-hidden">
+    <footer className="md:w-97.5 w-90 md:mx-3 mx-1 h-64 bg-secondary my-4 rounded-lg border-tertiary border-1 md:h-80 flex relative flex-wrap space-between">
+      <section className="flex flex-col p-3 sm:w-42  w-full">
+        <div className="flex row-reverse w-full sm:py-2 py-3 mx-2">
+          <img src = {Question} className="h-6 w-6 inline-block mr-2"/>
+          <p>Call us: 0800 033 8001</p>
+        </div>
+        <div className="flex row-reverse w-full sm:py-2 py-3 mx-2">
+          <img src = {Question} className="h-6 w-6 inline-block mr-2"/>
+          <p >Nearest Store</p>
+        </div>
+        <div className="flex row-reverse w-full sm:py-2 py-3 mx-2 ">
+          <img src = {Question} className="h-6 w-6 inline-block mr-2"/>
+          <p>Check Network Coverage</p>
+        </div>
+      </section>
+      <section className="w-full flex flex-col justify-start items-end sm:w-52 w-full">
+
+          <ul className="flex w-full sm:justify-end justify-around pt-6 px-2 md:text-sm underline text-xs ">
+            <li className = "inline sm:px-3 px-1">
+              Our Company
+            </li>
+            <li className = "inline sm:px-3 px-1">
+              Explore
+            </li>
+            <li className = "inline sm:px-3 px-1">
+              Terms and Policies
+            </li>
+            <li className = "inline sm:px-3 px-1">
+              Contact Us
+            </li>
+          </ul>
+
+        <div className="px-5 pt-1 sm:text-xs text-3xs font-light">
+          <p className="tracking-normal">©Hutchison 3G UK Limited</p>
+        </div>
+
+      </section>
+
+
+
+
+    <div className="text-center w-full overflow-hidden absolute bottom-0">
       <h1 className="text-16xl font-bold md:-mb-19 xl:-mb-24 xl:text-20xl hidden md:block tracking-wide">Three</h1>
     </div>
-  </div>
+  </footer>
   )
 }
