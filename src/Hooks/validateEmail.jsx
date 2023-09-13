@@ -3,7 +3,6 @@
 - No spaces
 - contains domain name
 - contains top level domain
-- starts and ends with characters
 */
 
 
