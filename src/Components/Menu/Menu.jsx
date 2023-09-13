@@ -23,7 +23,7 @@ export default function Menu({menuOpen, setMenuOpen}){
 
       <section className= "sm:h-60 h-52 w-full bg-secondary flex flex-col items-end justify-center">
 
-        <div onClick={handleMenuClose} className="self-start justify-self-end absolute top-0 mt-4 ml-5 cursor-pointer">
+        <div onClick={handleMenuClose} className="self-start justify-self-end absolute top-0 mt-4 ml-5 pb-1 cursor-pointer hover:border-b-2 hover:border-primary">
           <img src = {Close}  className="h-10 w-10 inline-block -mt-1"/>
         </div>
 
@@ -32,12 +32,12 @@ export default function Menu({menuOpen, setMenuOpen}){
         </div>
 
         <div className={upperMenuOptionsStyling}>
-          <p className="mr-2 cursor-pointer">Sign In</p>
+          <a href="" target="_blank" className="mr-2 cursor-pointer">Sign In</a>
           <img src = {SignIn} className={iconStyling}/>
         </div>
 
         <div className={upperMenuOptionsStyling}>
-          <p className="mr-2 cursor-pointer">Register</p>
+          <a href="" target="_blank" className="mr-2 cursor-pointer">Register</a>
           <img src = {Register} className={iconStyling}/>
         </div>
 
@@ -55,17 +55,17 @@ export default function Menu({menuOpen, setMenuOpen}){
         </div>
 
         <div className={lowerMenuOptionsStyling}>
-          <p className="mr-2">Store</p>
+          <a href="" target="_blank" className="mr-2">Store</a>
           <img src = {ShoppingBag} className={`${iconStyling} + -mt-1`}/>
         </div>
 
         <div className={lowerMenuOptionsStyling}>
-          <p className="mr-2">Help</p>
+          <a href="" target="_blank" className="mr-2">Help</a>
           <img src = {Question} className={iconStyling}/>
         </div>
 
         <div className={lowerMenuOptionsStyling}>
-          <p className="mr-2">Blog</p>
+          <a href="" target="_blank" className="mr-2">Blog</a>
           <img src = {BlogIcon} className={iconStyling}/>
         </div>
 
