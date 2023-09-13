@@ -1,5 +1,22 @@
 import NewTab from "../../Assets/NewTab.png"
+import {useState} from "react"
 export default function Form(){
+  const [formData, setFormData] = useState({
+    email:"",
+    phone:"",
+    password:""
+  })
+
+  function handleInputChange(event){
+    const {name, value} = event.target;
+    setFormData((prevState => ({...prevState, [name]: value})));
+    console.log(formData)
+  }
+
+
+
+
+
   return(<main className="w-full flex items-center flex-col h-3/5 ">
     <h1 className="text-4xl md:text-5xl font-bold pt-10 py-1 -mt-10 md:py-3 md:pt-10 md:-mt-8 border-b-1 border-secondary px-10">Login</h1>
     
@@ -8,16 +25,16 @@ export default function Form(){
       <form className="flex flex-wrap w-11/12 lg:w-4/5 xl:justify-start justify-center">
         <div className="w-full md:w-3/5 lg:w-1/2 px-7 md:pb-5 pb-2">
           <p className="font-bold">Email Address</p>
-          <input type= "text" className="bg-tertiary placeholder:text-sm py-1 md:placeholder:text-lg md:py-2 pl-2 rounded w-full focus:outline-none text-xl "></input>
+          <input type= "text" className="bg-tertiary placeholder:text-sm py-1 md:placeholder:text-lg md:py-2 pl-2 rounded w-full focus:outline-none text-xl " name="email" value={formData.email} onChange={handleInputChange}></input>
         </div>
         <div className="w-full md:w-3/5 lg:w-1/2 px-7 flex flex-col">
           <p className="font-bold">Three Number</p>
-          <input type= "text" className="bg-tertiary md:placeholder:text-lg py-1.5 md:py-2 pl-2 rounded w-full focus:outline-none text-xl "></input>
+          <input type= "text" className="bg-tertiary md:placeholder:text-lg py-1.5 md:py-2 pl-2 rounded w-full focus:outline-none text-xl " name="phone" value={formData.phone} onChange={handleInputChange}></input>
           <a className="self-end underline">Find your number</a>
         </div>
         <div className="w-full md:w-3/5 lg:w-1/2 px-7 flex flex-col">
           <p className="font-bold">Password</p>
-          <input type= "text" className="bg-tertiary md:placeholder:text-lg py-1.5 md:py-2 pl-2 rounded w-full focus:outline-none text-xl "></input>
+          <input type= "text" className="bg-tertiary md:placeholder:text-lg py-1.5 md:py-2 pl-2 rounded w-full focus:outline-none text-xl " name="password" value={formData.password} onChange={handleInputChange}></input>
           <a className="self-end underline">Forgot your password?</a>
         </div>
         <div className="w-full md:w-3/5 lg:w-1/2 px-7 flex flex-col items-start justify-center">
