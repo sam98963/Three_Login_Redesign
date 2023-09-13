@@ -28,14 +28,15 @@ export default {
       },
       fontSize: {
         "16xl": "16rem",
-        "20xl": "20rem",
-        "2xs": "0.7rem",
+        "19xl": "19rem",
+        "2xs": "0.rem",
         "3xs": "0.6rem",
         
       },
       margin:{
         "19": "9.5rem",
         "24": "12rem",
+        "23": "11.5rem"
       },
     },
     screens: {

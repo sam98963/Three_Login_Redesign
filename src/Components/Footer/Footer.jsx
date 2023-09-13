@@ -1,18 +1,20 @@
-import Question from "../../Assets/Question.png"
+import Internet from "../../Assets/Internet.png"
+import Phone from "../../Assets/Phone.png"
+import Location from "../../Assets/Location.png"
 export default function Footer(){
   return(
-    <footer className="md:w-97.5 w-90 md:mx-3 mx-1 h-64 bg-secondary my-4 rounded-lg border-tertiary border-1 md:h-80 flex relative flex-wrap space-between">
+    <footer className="md:w-97.5 w-90 md:mx-3 mx-1 h-60 bg-secondary my-4 rounded-lg border-tertiary border-1 md:h-72 flex relative flex-wrap space-between">
       <section className="flex flex-col p-3 sm:w-42  w-full">
         <div className="flex row-reverse w-full sm:py-2 py-3 mx-2">
-          <img src = {Question} className="h-6 w-6 inline-block mr-2"/>
+          <img src = {Phone} className="h-6 w-6 inline-block mr-2"/>
           <p>Call us: 0800 033 8001</p>
         </div>
         <div className="flex row-reverse w-full sm:py-2 py-3 mx-2">
-          <img src = {Question} className="h-6 w-6 inline-block mr-2"/>
+          <img src = {Location} className="h-6 w-6 inline-block mr-2"/>
           <p >Nearest Store</p>
         </div>
         <div className="flex row-reverse w-full sm:py-2 py-3 mx-2 ">
-          <img src = {Question} className="h-6 w-6 inline-block mr-2"/>
+          <img src = {Internet} className="h-6 w-6 inline-block mr-2"/>
           <p>Check Network Coverage</p>
         </div>
       </section>
@@ -43,7 +45,7 @@ export default function Footer(){
 
 
     <div className="text-center w-full overflow-hidden absolute bottom-0">
-      <h1 className="text-16xl font-bold md:-mb-19 xl:-mb-24 xl:text-20xl hidden md:block tracking-wide">Three</h1>
+      <h1 className="text-16xl font-bold md:-mb-19 xl:-mb-23 xl:text-19xl hidden md:block tracking-wide">Three</h1>
     </div>
   </footer>
   )
