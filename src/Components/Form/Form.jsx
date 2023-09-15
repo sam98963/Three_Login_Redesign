@@ -40,7 +40,7 @@ export default function Form(){
 
   const inputStyling = "bg-tertiary  py-1 md:py-2 pl-2 rounded w-full focus:outline-none text-xl"
 
-  return(<main className="w-full flex items-center flex-col h-3/5 ">
+  return(<main className="w-full flex items-center flex-col h-3/5 overflow-y-auto flex 1 mb-10 sm-mb-0">
     <h1 className="text-4xl md:text-5xl font-bold pt-10 py-1 -mt-10 md:py-3 md:pt-10 md:-mt-8 border-b-1 border-secondary px-10">Login</h1>
     
     <section className="w-full flex justify-center text-sm md:text-lg mt-2">

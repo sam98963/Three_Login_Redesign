@@ -3,7 +3,7 @@ import Phone from "../../Assets/Phone.png"
 import Location from "../../Assets/Location.png"
 export default function Footer(){
   return(
-    <footer className="md:w-97.5 w-90 md:mx-3 mx-1 h-60 bg-secondary my-4 rounded-lg border-tertiary border-1 md:h-72 flex absolute flex-wrap space-between bottom-0">
+    <footer className="md:w-97.5 w-90 md:mx-3 mx-1 h-60 bg-secondary mb-4 mt-auto rounded-lg border-tertiary border-1 md:h-72 flex relative flex-wrap space-between bottom-0">
       <section className="flex flex-col p-3 sm:w-42  w-full">
         <div className="flex row-reverse w-full sm:py-2 py-3 mx-2">
           <img src = {Phone} className="h-6 w-6 inline-block mr-2"/>
@@ -36,7 +36,7 @@ export default function Footer(){
           </ul>
 
         <div className="px-5 pt-1 sm:text-xs text-3xs font-light">
-          <p className="tracking-normal">©Hutchison 3G UK Limited</p>
+          <p className="tracking-normal pb-3">©Hutchison 3G UK Limited</p>
         </div>
 
       </section>

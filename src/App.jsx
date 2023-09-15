@@ -9,7 +9,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-      <div className="relative flex flex-col items-center w-screen h-screen flex-wrap">
+      <div className="flex flex-col items-center w-screen min-h-screen flex-wrap">
         <Header setMenuOpen={setMenuOpen} menuOpen={menuOpen}/>
         <Form />
         <Footer />
