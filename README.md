@@ -1,9 +1,17 @@
 # Three Login Page Redesign
 
+### Made using React.js (vite) with tailwindCSS and Figma as the design tool.
+
+## Running the App
+- Clone the repo.
+- cd into Three_Login_Design.
+- npm i to install dependencies.
+- npm run dev to run the page locally.
+- Have Fun!
 
 ## Design
 There are a few key focus points when looking to redesign this page:
-1. Slimlining selection options - In the footer particularly - also in the nav-bar/drop-down(mobile)
+1. Slimlining selection options - In the footer particularly - also in the nav-bar/menu
 2. Formatting and positioning - For Desktop there is a large amount of white-space on one side in the main page, which can be effective, but the spacing of content on the otherside is not slick. Consider central and reducing contents on the page, also consider rewording.
 3. Modernise with better responsive design and more minimalistic design
 4. Signup and Register take you to the same page in which you complete the same forms, more clarity by seperate pages for each, it is confusing me as a user.
